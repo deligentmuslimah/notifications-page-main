@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+body{
+   background-color: hsl(211, 68%, 94%) ; 
+   font-family: PlusJakartaSans;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box{
+    background-color:hsl(210, 60%, 98%) ;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.page{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.alert{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+}
+.alert span{
+    padding: 2px 8px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 5px;
+    font-size: 12px;
+}
+.comments{
+    display: flex;
+    gap: 20px;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    background-color: hsl(211, 68%, 94%);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+.txt span, .txt a{
+    font-weight: bold;
+    color: hsl(224, 21%, 14%);
+}
+.txt a:hover{
+    color:blue;
+}
+.txt{
+    color: gray;
+}
+.txt p{
+    margin: 5px auto;
+}
+.msg{
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.msg:hover{
+    background-color: hsl(211, 68%, 94%);
+    border: none;
+    cursor: pointer;
+    transition: ease-in linear 5s;
+}
+.right{
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+}
+.read{
+    background-color: hsl(0, 0%, 100%);
+}
+.txt .chess{
+    color: blue;
+}
+
+
+@media screen and (max-width: 600px ) {
+    .box{
+        width: 100%;
+        height: 100%;
+
+    }
+    .page{
+        width: auto;
+        height: 80%;
+        margin: 0;
+    }
+}
